@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import  { Config } from '../assets/config.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-tour-of-heroes';
+  title: string = Config.MAIN_TITLE;
 }
