@@ -4,12 +4,4 @@
     <span class="badge">{{ hero.id }}</span> {{ hero.name }}
   </li>
 </ul>
-<h2>Selected Hero Details</h2>
-<div *ngIf="selectedHero">
-  <div><span>id: </span>{{ selectedHero.id }}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-  </div>
-</div>
+<app-hero-detail [selectedHero]="selectedHero"></app-hero-detail>
